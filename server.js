@@ -20,6 +20,6 @@ console.log("SUPABASE_URL", process.env.SUPABASE_URL ? "set" : "missing");
 console.log("SUPABASE_KEY", process.env.SUPABASE_KEY ? "set" : "missing");
 console.log("PORT", PORT);
 
-app.listen(PORT, () => {
+app.listen(PORT, "0.0.0.0", () => {
   console.log(`Server running on port ${PORT}`);
 });
